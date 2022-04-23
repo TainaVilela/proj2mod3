@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "387b421a-942e-46ee-adf0-ff485c2c1f01",
+		"name": "proj2mod3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "tela inicial \"/personagens\"",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/personagens",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"personagens"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/personagens/create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n     \"personagem\": \"Tainá\",\r\n    \"descricao\": \"Madame Agathe is the leader of a satanic coven who are behind the Affair of the Poisons. She is a witch and a tarot reader with a large clientele among the nobles of Versailles, particularly her old friend Madame de Montespan.\",\r\n    \"foto\": \"https://i.ytimg.com/vi/7KlXHvPWg1s/maxresdefault.jpg\"\r\n  }"
+				},
+				"url": {
+					"raw": "http://localhost:3000/personagens/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"personagens",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/personagens/find-personagens",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/personagens/find-personagens",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"personagens",
+						"find-personagens"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/personagens/update/62632298f0393104bd4ab436",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n    \"personagem\": \"Tainá\",\r\n    \"descricao\": \"Madame Agathe is the leader of a satanic coven who are behind the Affair of the Poisons. She is a witch and a tarot reader with a large clientele among the nobles of Versailles, particularly her old friend Madame de Montespan.\",\r\n    \"foto\": \"https://i.ytimg.com/vi/7KlXHvPWg1s/maxresdefault.jpg\"\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:3000/personagens/delete/6261e284775c1a18d656dbeb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"personagens",
+						"delete",
+						"6261e284775c1a18d656dbeb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/personagens/update/6261e233775c1a18d656dbe9",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"personagem\": \"Madame Agathe\",\r\n    \"descricao\": \"Madame Agathe is the leader of a satanic coven who are behind the Affair of the Poisons. She is a witch and a tarot reader with a large clientele among the nobles of Versailles, particularly her old friend Madame de Montespan.\",\r\n    \"foto\": \"https://i.ytimg.com/vi/7KlXHvPWg1s/maxresdefault.jpg\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/personagens/update/6261e233775c1a18d656dbe9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"personagens",
+						"update",
+						"6261e233775c1a18d656dbe9"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
